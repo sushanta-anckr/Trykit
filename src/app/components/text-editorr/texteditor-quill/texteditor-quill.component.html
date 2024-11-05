@@ -1,0 +1,15 @@
+<!-- <hello name="{{ name }}"></hello> -->
+<p>
+  Start editing to see some magic happen :)
+</p>
+
+<quill-editor 
+  [(ngModel)]="html" 
+  [format]="'object'"
+  [styles]="{height: 'calc(50vh - 125px)'}"
+  placeholder= "Insert text here ..."
+  ng-invalid 
+  [required]="true"
+>
+</quill-editor>
+<button (click)="localSave()">save</button>  

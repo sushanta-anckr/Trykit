@@ -1,0 +1,11 @@
+<p>infinite-image works!</p>
+
+
+<div class="images">
+    <div *ngFor="let item of data" class="image-item">
+      <img [src]="item.download_url" alt="Image" />
+    </div>
+  </div>
+  <div #loader style="text-align: center">
+    {{ loading ? 'Loader...' : '' }}
+  </div>

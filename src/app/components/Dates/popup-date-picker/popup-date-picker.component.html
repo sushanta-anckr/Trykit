@@ -1,0 +1,22 @@
+<p>popup-date-picker works!</p>
+
+<button (click)="Popup()" class="bg-blue-500 text-white px-4 py-2 rounded">
+    Open Edit Popup
+  </button>
+
+
+
+    <div class="bg-gray-800 fixed inset-0 bg-opacity-50 flex items-center justify-center" *ngIf="isPopup">
+        <div class="bg-white w-96 h-96 p-6 rounded shadow-lg">
+            <h2 class="text-xl font-semibold mb-4">Edit Item</h2>
+            <mat-form-field>
+                <mat-label>Choose a date</mat-label>
+                <input matInput [matDatepicker]="picker" [formControl]="date">
+                <mat-hint>MM/DD/YYYY</mat-hint>
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+              </mat-form-field>
+        </div>
+    </div>
+
+

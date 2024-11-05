@@ -1,0 +1,27 @@
+<p>date-picker works!</p>
+
+<!-- date-picker.component.html -->
+<!-- <dp-date-picker
+  [(ngModel)]="selectedDate"
+  mode="day"
+  theme="dp-material"
+  (ngModelChange)="onDateChange()"
+></dp-date-picker>
+<p>Selected Date: {{ formattedDate }}</p> -->
+
+<!-- another one -->
+
+<div class="">
+  <input
+    type="text"
+    id="hireDate"
+    name="hireDate"
+    class="form-control input-element"
+    [dpDayPicker]="dpSetting"
+    [(ngModel)]="selectedDate"
+    (ngModelChange)="onDateChange()"
+    theme="datepicker-theme"
+    #hireDate="dpDayPicker"
+    required
+  />
+</div>

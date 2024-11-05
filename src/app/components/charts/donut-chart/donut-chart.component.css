@@ -1,0 +1,22 @@
+.chart-container {
+    display: flex;
+    justify-content: center;   /* Center horizontally */
+    align-items: center;       /* Center vertically */
+    padding: 20px;             /* Add padding around the chart */
+    height: 100vh;             /* Make the container take the full viewport height */
+  }
+  
+  svg {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .tooltip {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    pointer-events: none; /* Prevent mouse events on tooltip */
+    transition: opacity 0.2s; /* Smooth transition */
+  }

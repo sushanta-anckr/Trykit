@@ -1,0 +1,23 @@
+<p>full-calendar works!</p>
+
+
+<!-- full-calendar.component.html -->
+<!-- full-calendar.component.html -->
+<div class="calendar">
+    <div class="header">
+      <button (click)="prevMonth()">Previous</button>
+      <span>{{ currentMonthName }} {{ currentYear }}</span>
+      <button (click)="nextMonth()">Next</button>
+    </div>
+    <div class="weekdays">
+      <div *ngFor="let day of weekDays">{{ day }}</div>
+    </div>
+    <div class="days">
+      <!-- Render days in a single structure with trackBy -->
+      <div *ngFor="let day of daysArray; trackBy: trackByDay" 
+           [ngClass]="{ 'not-current-month': !day.isCurrentMonth }">
+        {{ day.date }}
+      </div>
+    </div>
+  </div>
+

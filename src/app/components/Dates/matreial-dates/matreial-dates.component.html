@@ -1,0 +1,22 @@
+
+<!-- 
+<mat-form-field >
+       <mat-label>Pick a date</mat-label>
+       <input matInput [matDatepicker]="picker">
+       <mat-hint>MM-DD-YYYY</mat-hint>
+       <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+       <mat-datepicker #picker></mat-datepicker>
+</mat-form-field> -->
+
+<mat-form-field class="input-elment">
+       <input matInput
+              placeholder="Date (result)"
+              [matDatepicker]="datePicker"
+              [(ngModel)]="value"
+              (click)="datePicker.open()"
+              (ngModelChange)="onDateChange($event)"
+              readonly>
+       <mat-datepicker-toggle matSuffix [for]="datePicker"></mat-datepicker-toggle>
+       <mat-datepicker #datePicker></mat-datepicker>
+     </mat-form-field>
+  

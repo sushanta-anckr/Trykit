@@ -1,0 +1,23 @@
+
+
+/* Tooltip styles */
+.tooltip {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #888;
+  padding: 0px 10px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  pointer-events: none; /* Prevent tooltip from interfering with mouse events */
+  font-size: 12px;
+  width: auto; /* Adjust width as needed */
+  max-width: 200px; /* Prevent tooltip from being too wide */
+  opacity: 0; /* Start as invisible */
+  transition: opacity 0.8s ease, transform 0.3s ease; /* Smooth transitions */
+  transform: translateY(-10px); /* Initial position */
+}
+
+.tooltip.show {
+  opacity: 1; /* Make visible */
+  transform: translateY(5); /* Move to final position */
+}

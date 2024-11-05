@@ -1,0 +1,29 @@
+<div>infinte scroll working</div>
+
+<div class="item-list grid gap-2 grid-cols-1 lg:grid-cols-3 mx-auto my-2 w-full" >
+    <div *ngFor="let item of items" class="img-container w-full mx-auto rounded-md border h-48">
+         <h1 >{{item.description}}</h1>
+         <h1>{{item.date}}</h1>
+         <h1>{{item.facilityId}}</h1>
+    </div>
+</div>
+
+<div *ngIf="isLoading" #lastItem class="flex justify-center">
+    Loading...
+</div>
+
+<!-- <ng-select
+  [items]="items"
+  bindLabel="description"
+  [loading]="isLoading"
+  [typeahead]="search$"
+  [virtualScroll]="true"
+  (scrollToEnd)="onScrollToEnd()"
+  [(ngModel)]="selectedItem"
+  placeholder="Select an item">
+
+</ng-select>
+
+<div *ngIf="isLoading" class="flex justify-center">
+  Loading...
+</div> -->

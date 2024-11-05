@@ -1,0 +1,542 @@
+.card-custom {
+  border-radius: 20px;
+  padding-bottom: 20px;
+  box-shadow: -2px 0px 6px 0px #2578a21a;
+}
+
+.heading-wrapper {
+  font-weight: 600;
+  font-size: 18px;
+  height: 27px;
+  color: #333333;
+}
+
+.gap-wrapper {
+  display: flex;
+  gap: 5px;
+}
+
+.pointer-cursor {
+  cursor: pointer;
+}
+
+.date-picker-wrapper {
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  .dp-popup {
+    z-index: 0 !important;
+    position: relative;
+    box-shadow: none !important;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 5px;
+    width: 250px;
+    ::ng-deep {
+      .dp-day-calendar-container {
+        box-shadow: none !important;
+      }
+      .dp-calendar-day {
+        margin: 3px 2px !important;
+        //   width: 35px !important;
+        //   height: 35px !important;
+      }
+      .dp-calendar-weekday {
+        margin: 1px 2px !important;
+        //   width: 35px !important;
+      }
+    }
+  }
+}
+
+.calender-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-height: 380px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  width: 250px;
+}
+.month-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  text-align: center;
+}
+
+.month-selected {
+  background-color: #31b0d5;
+  color: #fff;
+  border: 1px solid #67b5dc;
+}
+
+.date-task-wrapper {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  padding: 0 0 5px 20px;
+}
+
+.plan-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: auto;
+  max-height: 404px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.plan-heading-wrapper {
+  padding: 3px;
+  color: #333;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 21px */
+}
+
+.expand-icon {
+  color: #2578a2;
+  font-size: 17px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.plan-area-wrapper {
+  background: #eef2f5;
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 10px;
+}
+
+.divider-wrapper {
+  width: 2px;
+  background: #f5f5f5;
+}
+
+.location-count-wrapper {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+table.table tbody tr td,
+thead tr th {
+  border: 0;
+  background: #fff;
+}
+
+.table-bordered {
+  border: 0px;
+}
+
+.status-wrapper {
+  display: flex;
+  width: 53px;
+  height: 20px;
+  padding: 2px 6px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 12px */
+  margin-left: 10px;
+}
+
+.task-type-wrapper {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  border: 2px solid #8db0c1;
+  background: #007696;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%; /* 12.5px */
+  letter-spacing: -0.4px;
+  margin-right: 10px;
+}
+
+.cell-wrapper {
+  display: inline-flex;
+}
+
+.start-wrapper {
+  border: 1px solid #00a14b;
+  background: rgba(0, 161, 75, 0.5);
+}
+
+.completed-wrapper {
+  border: 1px solid #585858;
+  background: rgba(88, 88, 88, 0.5);
+}
+
+.in-progress-wrapper {
+  border-radius: 100px;
+  border: 1px solid #00A14B;
+  background: rgba(0, 161, 75, 0.50);
+}
+
+.ignored-wrapper {
+  border: 1px solid #ff902c;
+  background: rgba(255, 144, 44, 0.5);
+}
+
+.name-wrapper {
+  color: #000;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+}
+
+.task-heading-wrapper {
+  color: #000;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+}
+
+.name-heading {
+  width: 350px;
+}
+
+.location-heading {
+  width: 300px;
+}
+
+.product-heading {
+  width: 300px;
+}
+
+.loc-name-wrapper,
+.product-name-wrapper {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.name-width-wrapper {
+  display: inline-block;
+  max-width: 200px;
+}
+
+.count-wrapper {
+  display: inline-block;
+}
+
+app-rda-task-list {
+  .custom-dropdown-menu {
+    min-height: 50px !important;
+  }
+}
+
+// .margin-wrapper {
+//   margin-bottom: 10px;
+// }
+
+.chart-header {
+  background: #f5f9fb;
+  display: flex;
+  border-radius: 16px 16px 0px 0px;
+  height: 56px;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  align-self: stretch;
+  margin-bottom: 10px;
+
+}
+
+
+
+.no-data-wrapper {
+  width: 100%;
+  height: 100%;
+  align-self: center;
+}
+
+.toggle{
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+  align-items: center;
+}
+.toogle-item{
+  display: flex;
+width: 104px;
+height: 38px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 4px;
+border: 1px solid rgba(0, 118, 150, 0.80);
+color: rgba(0, 118, 150, 0.80);
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%;
+}
+
+.toggle-selected{
+display: flex;
+width: 104px;
+height: 38px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 4px;
+background: #007696;
+color: #FFF;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%;
+}
+
+
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { IDatePickerConfig } from 'ng2-date-picker';
+import { luxonDateTime, luxonInfo } from 'src/app/shared/dates';
+import { TranslateService } from '@ngx-translate/core';
+import { StorageService } from 'src/app/services/storage.serviceV2';
+import { RequestService } from 'src/app/services/request.service';
+import { endpoints } from 'src/app/constants/endpoints';
+import { LoaderService } from 'src/app/services/common-helper-service/loder.service';
+
+@Component({
+  selector: 'app-rda-task-list',
+  templateUrl: './rda-task-list.component.html',
+  styleUrls: ['./rda-task-list.component.scss'],
+})
+export class RdaTaskListComponent implements OnInit {
+  dpSetting: IDatePickerConfig;
+  dateFormat: any;
+  datePickerFormat: any;
+  showDatePicker: boolean;
+  datePickArr;
+  selectedDays: any[];
+  toggleTask:boolean=false;
+  monthList = [
+    {
+      name: 'Jan',
+      value: 1,
+    },
+    {
+      name: 'Feb',
+      value: 2,
+    },
+    {
+      name: 'Mar',
+      value: 3,
+    },
+    {
+      name: 'Apr',
+      value: 4,
+    },
+    {
+      name: 'May',
+      value: 5,
+    },
+    {
+      name: 'Jun',
+      value: 6,
+    },
+    {
+      name: 'Jul',
+      value: 7,
+    },
+    {
+      name: 'Aug',
+      value: 8,
+    },
+    {
+      name: 'Sep',
+      value: 9,
+    },
+    {
+      name: 'Oct',
+      value: 10,
+    },
+    {
+      name: 'Nov',
+      value: 11,
+    },
+    {
+      name: 'Dec',
+      value: 12,
+    },
+  ];
+
+  selectedMonth: any;
+  headers: { authorization: any };
+  data: any;
+  planAreaObj = {};
+  @Output() expandCard = new EventEmitter<string>();
+  @Input() isExpanded: boolean = true;
+
+  constructor(
+    private translateService: TranslateService,
+    private storageService: StorageService,
+    private requestService: RequestService,
+    private loaderService: LoaderService
+  ) {
+    this.dateFormat = this.storageService.dateFormat;
+    this.datePickerFormat = this.dateFormat.toUpperCase();
+    this.headers = {
+      authorization: this.storageService.authorizationToken,
+    };
+  }
+
+  ngOnInit(): void {
+    this.selectedDays = [this.currentDate];
+    this.dpSetting = {
+      format: this.datePickerFormat,
+      allowMultiSelect: true,
+      showWeekNumbers: false,
+      appendTo: 'body',
+      locale:
+        this.translateService.currentLang == 'sp'
+          ? 'es'
+          : this.translateService.currentLang,
+      showGoToCurrent: true,
+    };
+
+    this.datePickArr = [this.dpSetting];
+    this.getPlanAreaTasks();
+  }
+
+  get currentDate() {
+    return luxonDateTime().now().toFormat(this.dateFormat);
+  }
+
+  getPlanAreaTasks() {
+    let start_date = '';
+    let end_date = '';
+
+    if (this.selectedMonth) {
+      let month = this.selectedMonth;
+      let year = luxonDateTime().now().year;
+      start_date = luxonDateTime()
+        .fromObject({ year, month, day: 1 })
+        .startOf('day')
+        .toJSDate()
+        .toISOString();
+      end_date = luxonDateTime()
+        .fromObject({ year, month, day: 1 })
+        .endOf('month')
+        .toJSDate()
+        .toISOString();
+    } else {
+      let date = this.selectedDays[0];
+      if (typeof date === 'object') {
+        date = date._d;
+        start_date = luxonDateTime()
+          .fromJSDate(date)
+          .startOf('day')
+          .toJSDate()
+          .toISOString();
+        end_date = luxonDateTime()
+          .fromJSDate(date)
+          .endOf('day')
+          .toJSDate()
+          .toISOString();
+      } else {
+        start_date = luxonDateTime()
+          .fromFormat(date, this.dateFormat)
+          .startOf('day')
+          .toJSDate()
+          .toISOString();
+        end_date = luxonDateTime()
+          .fromFormat(date, this.dateFormat)
+          .endOf('day')
+          .toJSDate()
+          .toISOString();
+      }
+    }
+
+    this.loaderService.showLoader();
+    this.requestService
+      .send<any>(
+        'GET',
+        `${endpoints.get_rda_tasks}?facilityId=${this.storageService.user.currentFacilityId}&start_date=${start_date}&end_date=${end_date}`,
+        {
+          headers: this.headers,
+        }
+      )
+      .then((res) => {
+        this.loaderService.hideLoader();
+        this.data = res?.get_rda_tasks || [];
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }
+
+  onMonthSelect(event) {
+    this.datePickArr = [];
+    this.selectedMonth = event?.value;
+    this.selectedDays = [];
+    this.getPlanAreaTasks();
+    setTimeout(() => {
+      this.dpSetting = {
+        ...this.dpSetting,
+        
+      }
+      this.datePickArr = [this.dpSetting];
+    }, 100);
+  }
+
+  getSelectedDate(element) {
+    let date = element.date._d;
+    let month = date.getMonth();
+    let year = date.getFullYear();
+    let day = date.getDate();
+    return luxonDateTime().fromObject({year, month: month + 1, day}).toFormat(this.dateFormat);
+  }
+
+  onDaySelect(event) {
+    let pickedDate = this.getSelectedDate(event);
+    this.selectedDays = [pickedDate];
+    this.selectedMonth = null;
+    this.getPlanAreaTasks();
+  }
+
+  expand() {
+    this.expandCard.emit('task-planner');
+  }
+}

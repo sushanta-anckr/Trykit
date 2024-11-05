@@ -1,0 +1,41 @@
+<p>full-calendar2 works!</p>
+<!-- 
+<div class="calendar">
+    <div class="month">
+      <div class="prev">&#10094;</div>
+      <div class="date">
+        <h2 id="month"></h2>
+        <h3 id="year"></h3>
+      </div>
+      <div class="next">&#10095;</div>
+    </div>
+    <div class="weekdays">
+      <div>Sun</div>
+      <div>Mon</div>
+      <div>Tue</div>
+      <div>Wed</div>
+      <div>Thu</div>
+      <div>Fri</div>
+      <div>Sat</div>
+    </div>
+    <div class="days" id="days">
+    </div>
+  </div> -->
+
+
+  <div class="calendar">
+    <div class="header">
+      <button (click)="changeMonth(-1)" class="prev">Prev</button>
+      <div class="month-year">
+        <span id="month">{{ months[currentMonth] }}</span>
+        <span id="year">{{ currentYear }}</span>
+      </div>
+      <button (click)="changeMonth(1)" class="next">Next</button>
+    </div>
+  
+    <div id="days" class="days-container">
+      <div *ngFor="let day of days" [ngClass]="{ 'active': day.isActive, 'inactive': day.isInactive }">
+        {{ day.day }}
+      </div>
+    </div>
+  </div>

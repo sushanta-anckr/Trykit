@@ -1,0 +1,21 @@
+/* Styling for undo and redo buttons */
+.ql-toolbar .ql-undo, 
+.ql-toolbar .ql-redo {
+    background-color: #f3f3f3;  /* Light gray background */
+    border-radius: 50%;         /* Rounded background */
+    padding: 5px;               /* Space around the icon */
+    margin: 0 5px;              /* Space between buttons */
+    width: 24px;                /* Set width to create a circle */
+    height: 24px;               /* Set height to create a circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;            /* Pointer cursor on hover */
+}
+
+/* Adjusting the icon size inside the button */
+.ql-toolbar .ql-undo svg, 
+.ql-toolbar .ql-redo svg {
+    width: 14px;
+    height: 14px;
+}

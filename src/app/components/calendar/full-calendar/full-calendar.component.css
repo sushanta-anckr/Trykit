@@ -1,0 +1,27 @@
+/* full-calendar.component.scss */
+.calendar {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .weekdays, .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  .days div {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .not-current-month {
+    color: #ccc;
+  }
+}
